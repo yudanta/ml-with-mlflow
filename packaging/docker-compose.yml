@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  coolapp:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8001"
+    env_file:
+      - .env
